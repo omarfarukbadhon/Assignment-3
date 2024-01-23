@@ -38,7 +38,7 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content text-xl mt-3 z-[1] p-2 ">
+                        class="menu menu-sm dropdown-content text-xl mt-3 z-[100] p-2 ">
                         <li><a class="text-[#FF4240]">Home</a></li>
                         <li><a>About</a></li>
                         <li>
@@ -54,7 +54,7 @@
                 </div>
                 <a class=" text-4xl text-[#131318] font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s</a>
             </div>
-            <div class="navbar-center hidden bg-white lg:flex text-xl">
+            <div class="navbar-center hidden bg-white lg:flex text-xl z-[100]">
                 <ul class="menu menu-horizontal px-1 text-xl">
                     <li><a class="text-[#FF4240]">Home</a></li>
                     <li><a>About</a></li>
@@ -78,7 +78,33 @@
                 <a class="btn text-white text-xl bg-[#FF4240] hover:bg-[#e24845] transition-all duration-500">Get Ticket</a>
             </div>
         </div>
-
+        <!-- Header main content (slider) -->
+        <div class="mt-12 md:px-10 xl:px-32">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex gap-4 transform -translate-y-[93%] left-5 bottom-5 top-[93%]">
+                    <a href="#slide3" class="btn btn-circle text-white bg-black border-none text-xl">❮</a> 
+                    <a href="#slide2" class="btn btn-circle text-white bg-black border-none text-xl">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/2.png" class="w-full rounded-3xl" />
+                  <div class="absolute flex gap-4 transform -translate-y-[93%] left-5 bottom-5 top-[93%]">
+                    <a href="#slide1" class="btn btn-circle text-white bg-black border-none text-xl">❮</a> 
+                    <a href="#slide3" class="btn btn-circle text-white bg-black border-none text-xl">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="Images/3.png" class="w-full rounded-3xl" />
+                  <div class="absolute flex gap-4 transform -translate-y-[93%] left-5 bottom-5 top-[93%]">
+                    <a href="#slide2" class="btn btn-circle text-white bg-black border-none text-xl">❮</a> 
+                    <a href="#slide1" class="btn btn-circle text-white bg-black border-none text-xl">❯</a>
+                  </div>
+                </div> 
+            </div>
+        </div>
+        
     </header>
 </body>
 
